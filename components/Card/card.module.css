@@ -10,7 +10,7 @@
   font-weight: bold;
 }
 
-.card p {
+.card > p {
   font-size: 16px;
   font-weight: 500;
 }
@@ -61,10 +61,6 @@
 
 .tertiary h2 {
   color: var(--card-tertiary-heading);
-}
-
-.tertiary p {
-  color: var(--text-color);
 }
 
 .hasBlockquote blockquote {
