@@ -7,7 +7,7 @@ type buttonProps = {
 
 export default function Button({ children }: buttonProps) {
   return (
-    <button type="button" className={styles.button}>
+    <button type="submit" className={styles.button}>
       {children}
     </button>
   );

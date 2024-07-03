@@ -2,7 +2,7 @@
   margin-top: 10px;
 }
 
-.form div {
+.form > div {
   display: flex;
   gap: 20px;
 }
@@ -28,4 +28,16 @@
   text-transform: uppercase;
   font-size: 14px;
   font-weight: 400;
+}
+
+.inputContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.error {
+  margin-top: 4px;
+  font-size: 14px;
+  color: var(--error-color);
 }
