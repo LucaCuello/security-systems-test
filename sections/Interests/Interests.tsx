@@ -2,7 +2,7 @@ import Card from "@/components/Card/Card";
 
 export default function Interests() {
   return (
-    <Card type="secondary">
+    <Card type="secondary" delay={0.2}>
       <h2>Interests</h2>
       <p>
         As a composer, my work is deeply influenced by a variety of interests
