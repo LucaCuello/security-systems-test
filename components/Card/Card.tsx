@@ -1,4 +1,7 @@
+"use client";
+
 import clsx from "clsx";
+import { motion } from "framer-motion";
 import { ReactNode } from "react";
 import styles from "./card.module.css";
 
@@ -7,6 +10,7 @@ type CardProps = {
   type: "primary" | "secondary" | "tertiary";
   grow?: boolean;
   hasBlockquote?: boolean;
+  delay?: number;
 };
 
 export default function Card({
@@ -14,6 +18,7 @@ export default function Card({
   type,
   grow,
   hasBlockquote,
+  delay = 0,
 }: CardProps) {
   const cardStyles = clsx(styles.card, {
     [styles.primary]: type === "primary",
@@ -22,5 +27,14 @@ export default function Card({
     [styles.grow]: grow,
     [styles.hasBlockquote]: hasBlockquote,
   });
-  return <section className={cardStyles}>{children}</section>;
+  return (
+    <motion.section
+      className={cardStyles}
+      initial={{ opacity: 0, y: -20 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.2, delay, ease: "easeInOut" }}
+    >
+      {children}
+    </motion.section>
+  );
 }
