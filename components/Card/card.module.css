@@ -1,0 +1,52 @@
+.card {
+  border-radius: 20px;
+  padding: 40px 30px;
+}
+
+.card h1,
+.card h2 {
+  font-size: 64px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.card p {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.primary {
+  background-color: var(--card-primary);
+}
+
+.primary h1 {
+  color: var(--card-primary-heading);
+}
+
+.primary p {
+  color: var(--card-primary-text);
+}
+
+.secondary {
+  background-color: var(--card-secondary);
+}
+
+.secondary h1 {
+  color: var(--card-secondary-heading);
+}
+
+.secondary p {
+  color: var(--card-secondary-text);
+}
+
+.tertiary {
+  background-color: var(--card-tertiary);
+}
+
+.tertiary h1 {
+  color: var(--card-tertiary-heading);
+}
+
+.tertiary p {
+  color: var(--text-color);
+}
