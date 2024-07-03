@@ -1,0 +1,35 @@
+.header {
+  margin-top: 40px;
+  padding: 10px 20px;
+  background-color: var(--light-background);
+  border-radius: 50px;
+}
+
+.userContainer {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.userContainer img {
+  border-radius: 50%;
+  border: 3px solid #60aaba;
+  object-fit: cover;
+}
+
+.nameContainer {
+  display: flex;
+  flex-direction: column;
+  color: var(--text-color);
+}
+
+.nameContainer h4 {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.nameContainer p {
+  font-weight: 200;
+  font-size: 15px;
+}
