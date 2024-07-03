@@ -1,0 +1,31 @@
+.form {
+  margin-top: 10px;
+}
+
+.form div {
+  display: flex;
+  gap: 20px;
+}
+
+.form div input,
+.form textarea {
+  border: 2px solid #bac3ce;
+  background-color: transparent;
+  border-radius: 10px;
+  padding: 12px 20px;
+  color: var(--text-color);
+}
+
+.form textarea {
+  margin-top: 20px;
+  width: 100%;
+  resize: none;
+  min-height: 200px;
+}
+
+.form div input::placeholder,
+.form textarea::placeholder {
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 400;
+}

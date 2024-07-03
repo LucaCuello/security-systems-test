@@ -2,12 +2,14 @@
   --dark-background: #0d0d0b;
   --light-background: #1c232b;
   --text-color: #b9b9b9;
+  --button-color: #60aaba;
+  --button-text-color: #0a3842;
   --card-primary: #fbd269;
   --card-primary-heading: #976f09;
   --card-primary-text: #594510;
   --card-secondary: #fc9e6a;
   --card-secondary-heading: #ae4c16;
-  --card-secondary-text: #813B15;
+  --card-secondary-text: #813b15;
   --card-tertiary: var(--light-background);
   --card-tertiary-heading: #bac4ce;
   --max-width: 1200px;
@@ -28,4 +30,10 @@ body {
 a {
   color: inherit;
   text-decoration: none;
+}
+
+input,
+textarea,
+button {
+  font-family: inherit;
 }
