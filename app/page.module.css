@@ -12,7 +12,7 @@
   margin-top: 40px;
 }
 
-.cardsContainer div {
+.cardsContainer > div {
   display: flex;
   flex-direction: column;
   gap: 20px;
