@@ -98,3 +98,21 @@
 .grow {
   flex-grow: 1;
 }
+
+@media screen and (max-width: 768px) {
+  .card h1,
+  .card h2 {
+    font-size: 48px;
+  }
+
+  .card > p {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .card h1,
+  .card h2 {
+    font-size: 32px;
+  }
+}

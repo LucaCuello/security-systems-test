@@ -10,11 +10,11 @@ export default function Home() {
     <main className={styles.main}>
       <Header />
       <div className={styles.cardsContainer}>
-        <div>
+        <div className={styles.cardColumn}>
           <AboutMe />
           <Interests />
         </div>
-        <div>
+        <div className={styles.cardColumn}>
           <Contact />
           <Quote />
         </div>

@@ -3,17 +3,36 @@
   flex-direction: column;
   max-width: var(--max-width);
   width: var(--max-width);
-  margin: 0 20px;
+  min-width: 300px;
+  margin: 20px;
 }
 
 .cardsContainer {
   display: flex;
   gap: 25px;
   margin-top: 40px;
+  width: 100%;
 }
 
-.cardsContainer > div {
+.cardColumn {
   display: flex;
   flex-direction: column;
   gap: 20px;
+}
+
+@media screen and (max-width: 1000px) {
+  .cardsContainer {
+    flex-wrap: wrap;
+  }
+
+  .cardColumn {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .cardsContainer {
+    margin-top: 20px;
+  }
 }
