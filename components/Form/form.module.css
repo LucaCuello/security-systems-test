@@ -41,3 +41,14 @@
   font-size: 14px;
   color: var(--error-color);
 }
+
+@media screen and (max-width: 600px) {
+  .form div {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .form textarea {
+    margin-top: 10px;
+  }
+}

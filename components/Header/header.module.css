@@ -1,5 +1,4 @@
 .header {
-  margin-top: 40px;
   padding: 10px 20px;
   background-color: var(--light-background);
   border-radius: 50px;
@@ -32,4 +31,18 @@
 .nameContainer p {
   font-weight: 200;
   font-size: 15px;
+}
+
+@media screen and (max-width: 600px) {
+  .userContainer {
+    gap: 10px;
+  }
+
+  .nameContainer h4 {
+    font-size: 16px;
+  }
+
+  .nameContainer p {
+    font-size: 12px;
+  }
 }
