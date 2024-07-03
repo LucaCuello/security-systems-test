@@ -3,4 +3,17 @@
   flex-direction: column;
   max-width: var(--max-width);
   width: var(--max-width);
+  margin: 0 20px;
+}
+
+.cardsContainer {
+  display: flex;
+  gap: 25px;
+  margin-top: 40px;
+}
+
+.cardsContainer div {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
