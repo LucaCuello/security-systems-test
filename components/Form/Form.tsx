@@ -38,7 +38,7 @@ export default function Form() {
               {...register("fullName", { required: true })}
             />
             {errors.fullName && (
-              <p className={styles.error}>Full name can't be empty.</p>
+              <p className={styles.error}>Full name can&apos;t be empty.</p>
             )}
           </div>
           <div className={styles.inputContainer}>
@@ -48,7 +48,7 @@ export default function Form() {
               {...register("email", { required: true })}
             />
             {errors.email && (
-              <p className={styles.error}>Email can't be empty.</p>
+              <p className={styles.error}>Email can&apos;t be empty.</p>
             )}
           </div>
         </div>
@@ -59,7 +59,7 @@ export default function Form() {
         {errors.message && (
           <p className={styles.error}>You need to write something</p>
         )}
-        <Button>Let's talk!</Button>
+        <Button>Let&apos;s talk!</Button>
       </form>
       <Toaster position="top-right" />
     </div>
