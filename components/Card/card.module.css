@@ -42,7 +42,11 @@
 
 .secondary strong {
   color: var(--card-secondary-text);
-  font-weight: 800;
+  font-weight: 700;
+}
+
+.secondary ul li {
+  color: var(--card-secondary-text);
 }
 
 .secondary ul li::marker {

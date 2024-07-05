@@ -1,0 +1,35 @@
+.blob {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(100px);
+  z-index: -1;
+}
+
+.primaryBlob {
+  top: 100px;
+  right: 50px;
+  height: 200px;
+  width: 200px;
+  animation: blob 10s infinite;
+  background-color: #0ecfff77;
+}
+.secondaryBlob {
+  bottom: 0;
+  left: 50px;
+  height: 250px;
+  width: 250px;
+  animation: blob 5s infinite;
+  background-color: #ff8a4b8c;
+}
+
+@keyframes blob {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
